@@ -52,21 +52,16 @@ export const IniciodeSesion = () => {
   };
 
   const handleRegistroClick = () => {
-
     window.location.href = "/register";
   };
 
-  const handlehomepageClick = () => {
-
-    window.location.href = "/homepage";
-  };
   return (
     <div className="IScontenido">
       <div className="ISRemarco">
         <form onSubmit={handleSubmit}>
           <div>
-            <h1 className="ISh1">Inicio de Sesion</h1> 
-            <hr className="IShr"/>
+            <h1 className="ISh1">Inicio de Sesion</h1>
+            <hr className="IShr" />
             <h2 className="ISh2">Correo Electronico</h2>
             <input
               className="ISinput"
@@ -88,7 +83,9 @@ export const IniciodeSesion = () => {
               required
             />
           </div>
-          <button className="ISbutton" type="submit" onClick={handlehomepageClick}>Iniciar sesión</button>
+          <button className="ISbutton" type="submit" onClick={handleSubmit}>
+            Iniciar sesión
+          </button>
         </form>
         <center>
           <p className="ISp">¿No tenes cuenta?</p>

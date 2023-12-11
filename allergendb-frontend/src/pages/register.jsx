@@ -42,19 +42,16 @@ export const Registro = () => {
     // Redirigir al usuario a la página de registro ("/register")
     window.location.href = "/login";
   };
-  const handleRegistro2Click = () => {
 
-  window.location.href = "/homepage";
-};
   return (
     <div className="Rcontenido">
       <div className="RRemarco">
         <form onSubmit={handleSubmit}>
           <div>
-          <h1 className="Rh1">Registro</h1> 
-            <hr className="Rhr"/>
+            <h1 className="Rh1">Registro</h1>
+            <hr className="Rhr" />
             <h2 className="Rh2">Correo Electronico</h2>
-            <input 
+            <input
               className="Rinput"
               type="text"
               value={FormData.email}
@@ -74,7 +71,9 @@ export const Registro = () => {
               required
             />
           </div>
-          <button className="Rbutton"type="submit" onClick={handleRegistro2Click}>Registrate</button>
+          <button className="Rbutton" type="submit" onClick={handleSubmit}>
+            Registrate
+          </button>
         </form>
         <center>
           <p className="Rp">¿Ya tenes cuenta?</p>
