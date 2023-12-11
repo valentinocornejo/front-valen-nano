@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(31,255,237,1) 0%, rgba(151,255,249,1) 50%, rgba(255,255,255,1) 98%);
+    background-size: 1vh 100vh;
+    text-align: center;
+  }
+  
+  .HPheader {
+    background-color: #f0f0f0;
+    padding: 1vh 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-elements {
+    display: flex;
+    align-items: center;
+    margin-left:4vh;
+  }
+  
+  .HPlogo-img {
+    width: 28vh; 
+    max-height: 8vh;
+  }
+  
+  .right-elements {
+    display: flex;
+    align-items: center;
+    margin-right: 4vh;
+  }
+
+  .right-elements :hover {
+    background-color: rgb(179, 179, 179);
+    border-color: #007BFF;
+    border: none;
+    transition: 0.7s;
+    color: black;
+    
+  }
+  
+  .HPbutton {
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    background-color: #007BFF;
+    color: white;
+    font-size: 2vh;
+    margin-right: 4vh;
+    border: none;
+  }
+
+  .HPimg-button {
+    padding: 1.3vh;
+    background-color: #007BFF;
+    border-radius: 10vh;
+    width: 5vh;
+    height: 5vh;
+  }
+ 
+  .HPimg-btn  {
+    width: 7vh;
+    height: 7vh;
+    justify-content: center;
+    align-items:center;
+    background-color: blue;
+    border: 0;
+    border-radius: 5vh;
+  }
+  .HPimg {
+    width: 4vh;
+    height: 4vh;
+  }
+  .HPinput{
+    border-radius: 5vh;    
+    background-color: white;
+    border-color: black;
+    width: 60vh;
+    height: 5vh;
+    font-size: larger;
+}
+  .HPbarras{
+  width:19vh;
+}
+  .HPcodigo{
+  margin-left: 0;
+  margin-top: 10vh;
+  width: 22vh;
+  border: 1;
+  margin-right: -165vh;
+  margin-top: 20vh;
+  background:white;
+}
+
+.HPRecuadro{
+  width: 20vh;
+  height: 20vh;
+  background-color: white;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 10vh;
+  border-radius: 2vh;
+  border-color: grey;
+}
+
+.HPbuscador{
+  margin-top: 15vh;
+  border-radius: 5vh;    
+  background-color: white;
+  border-color: black;
+  width: 60vh;
+  height: 5vh;
+  margin-top: 13vh;
+  font-size: larger;
+}
