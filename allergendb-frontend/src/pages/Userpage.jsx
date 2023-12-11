@@ -1,4 +1,4 @@
-import "./styles/Pagproductos.css";
+import "./styles/pagproductos.css";
 import React, { useState, useEffect } from "react";
 export const Perfil = () => {
   const [userProfile, setUserProfile] = useState({});
