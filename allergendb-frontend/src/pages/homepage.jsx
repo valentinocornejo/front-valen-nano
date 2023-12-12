@@ -108,11 +108,33 @@ export const Homepage = () => {
     );
   };
 
+  // const sendBarcodeToBackend = async (code) => {
+  //   console.log("Enviando código de barras al backend:", code);
+
+  //   try {
+  //     console.log(code);
+  //     const response = await fetch("http://localhost:3002/api/scanbarcode", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({ barcode: code }),
+  //     });
+
+  //     if (response.ok) {
+  //       console.log("Respuesta del backend:", await response.json());
+  //     } else {
+  //       console.error("Error al enviar el código de barras al backend");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error al enviar el código de barras al backend:", error);
+  //   }
+  // };
+
   const sendBarcodeToBackend = async (code) => {
     console.log("Enviando código de barras al backend:", code);
 
     try {
-      console.log(code);
       const response = await fetch("http://localhost:3002/api/scanbarcode", {
         method: "POST",
         headers: {
@@ -125,6 +147,11 @@ export const Homepage = () => {
         console.log("Respuesta del backend:", await response.json());
       } else {
         console.error("Error al enviar el código de barras al backend");
+
+        // Manejar específicamente el código de estado 404
+        if (response.status === 404) {
+          console.log("No se encontró el código de barras en el backend");
+        }
       }
     } catch (error) {
       console.error("Error al enviar el código de barras al backend:", error);
